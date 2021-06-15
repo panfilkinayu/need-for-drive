@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+.swiper-container {
+    width: 45%;
+    height: 100vh;
+
+  }
+  
+  .swiper-slide {
+    background-size:cover;
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+
+  .swiper-slide::after{
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
+    mix-blend-mode: normal;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,.5);
+    z-index: 2;
+  }
+
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+    color:  #EEEEEE;
+    font-size: 18px;
+    font-weight: 700;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.swiper-button-prev:hover:after,
+.swiper-button-next:hover:after{
+    background: rgba(14, 194, 97, 0.2);
+}
+
+.swiper-button-prev,
+.swiper-button-next{
+    width: 64px;
+    height: 100%;
+    top: 0;
+    margin-top: 0;
+   
+}
+
+.swiper-button-prev{
+    left: 0;
+}
+
+.swiper-button-next{
+    right: 0;
+}
+
+.swiper-pagination-bullet{
+    opacity: 1;
+    background-color: #EEEEEE;
+}
+
+.swiper-pagination-bullet-active{
+    opacity: 1;
+    background-color: #0EC261;
+}
+
+.inner{
+    z-index: 3;
+    position: relative;
+    padding-top: 29%;
+    padding-left: 14%;
+    padding-right: 14%;
+}
+
+.inner h2{
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    color: white;
+    
+}
+
+.inner p{
+    font-family: Roboto,sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 100%;
+    color: #EEEEEE;
+
+}
+
+.inner button{
+    border-radius: 4px;
+    width: 164px;
+    height: 48px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    color: #EEEEEE;
+    margin-top: 32px;
+}
+
+.button_freepark{
+    background: linear-gradient(90deg, #13493F 0%, #0C7B1B 100%);
+}
+
+.button_insur{
+    background: linear-gradient(90deg, #132949 0%, #0C7B67 100%);
+}
+
+.button_fuel{
+    background: linear-gradient(90deg, #493013 0%, #7B0C3B 100%);
+}
+
+.button_service{
+    background: linear-gradient(90deg, #281349 0%, #720C7B 100%);
+}
+
+.swiper-container {
+    margin-left: auto;
+    margin-right: auto;
+  }
